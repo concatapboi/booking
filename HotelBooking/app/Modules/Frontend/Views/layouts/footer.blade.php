@@ -41,7 +41,7 @@
                                 <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Rooms</a></li>
                                 <li><a href="{{action('PageController@blog')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>Blog</a></li>
                                 <li><a href="{{action('PageController@about')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                <li><a href="{{action('PageController@contact')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>    
+                                <li><a href="{{action('PageController@contact')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,10 +77,10 @@
             </div>
         </div>
     </footer>
-    <!-- Login Modal -->  
+    <!-- Login Modal -->
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">                      
+      <div class="modal-content">
         <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4>Login or Register</h4>
@@ -88,12 +88,12 @@
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <table class="table">
                 <tr>
-                    <td><label for="">Username<span>*</span></label></td>
-                    <td><input type="text" placeholder="Username"></td>
+                    <td><label for="">Username or email<span class="text-danger">*</span></label></td>
+                    <td><input type="text" placeholder="Username or email" name="username"></td>
                 </tr>
                 <tr>
-                    <td><label for="">Password<span>*</span></label></td>
-                    <td><input type="password" placeholder="Password"></td>
+                    <td><label for="">Password<span class="text-danger">*</span></label></td>
+                    <td><input type="password" placeholder="Password" name="password"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="btn roberto-btn" type="submit">Login</button></td>
@@ -103,7 +103,7 @@
                 </tr>
             </table>
           </form>
-        </div>                        
+        </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
-  </div>    
+  </div>
