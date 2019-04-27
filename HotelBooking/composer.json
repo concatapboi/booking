@@ -34,8 +34,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "App\\Modules": "app/Modules",
-            "App\\Models": "app/Models"
+            "App\\Modules\\": "app/Modules",
+            "App\\Models\\": "app/Models"
         },
         "classmap": [
             "database/seeds",
