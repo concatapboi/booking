@@ -106,7 +106,7 @@
 												</div>
 										</div>
 										<div class="form-group">
-												<input type="checkbox" name="policy"> Did read and agreed <a href="#" class="text-primary" >the policies.</a> <br>
+												<input type="checkbox" name="policy"> agreed <a href="#" class="text-primary" >the policies.</a> <br>
 												<button type="submit" class="btn roberto-btn w-25">Register</button>
 										</div>
 								</form>
