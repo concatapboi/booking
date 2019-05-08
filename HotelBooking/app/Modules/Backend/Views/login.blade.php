@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Admin</title>
-	<link rel="stylesheet" type="text/css" href="{{asset('blog/css/adminstyles.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('blog/admin/styles.css')}}">
 </head>
 <body>
 	<form class="box" action="" method="post">
