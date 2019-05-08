@@ -1,2 +1,4 @@
 <?php
-	Route::get('/',function(){ echo 'Backend!';});
+	Route::get('/',function(){
+		return view('Backend::login');
+	});
