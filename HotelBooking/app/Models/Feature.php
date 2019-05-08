@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Feature extends Model
 {
-    //
+  protected $table = 'feature';
+
+  protected $fillable =[
+    'name',
+    'meta_name',
+    'status',
+  ];
 }
