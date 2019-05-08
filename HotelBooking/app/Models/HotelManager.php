@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class HotelManager extends Model
 {
-    //
+  protected $table = 'hotel_manager';
+
+  protected $fillable =[
+    'user_id',
+  ];
 }
