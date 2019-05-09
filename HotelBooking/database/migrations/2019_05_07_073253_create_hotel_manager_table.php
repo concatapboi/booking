@@ -14,7 +14,7 @@ class CreateHotelManagerTable extends Migration
     public function up()
     {
         Schema::create('hotel_manager', function (Blueprint $table) {
-            $table->Integer('user_id',10)->unsigned()->index();
+            $table->integer('user_id',10)->unsigned();
             $table->foreign('user_id')
             ->references('id')->on('users')
             ->onDelete('cascade');

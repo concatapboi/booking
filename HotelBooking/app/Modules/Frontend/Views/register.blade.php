@@ -26,7 +26,7 @@
 					<div class="row justify-content-center">
 						<!-- Login Area Start -->
 							<div class="col-12 col-lg-5">
-								<form action="#" method="post" enctype="multipart/form-data">
+								<form action="{{action('PageController@postLogin')}}" method="post" enctype="multipart/form-data">
 									<input type="hidden" name="_token" value="{{csrf_token()}}">
 										<div class="form-group mb-30">
 												<label for="checkInDate">Username or email<span class="text-danger">*</span> </label>

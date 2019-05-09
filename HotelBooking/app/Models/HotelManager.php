@@ -11,4 +11,8 @@ class HotelManager extends Model
   protected $fillable =[
     'user_id',
   ];
+
+  public function ofUser(){
+     return $this->belongTo('App\Models\User');
+   }
 }

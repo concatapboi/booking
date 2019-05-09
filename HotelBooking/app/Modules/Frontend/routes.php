@@ -4,7 +4,7 @@
 	});
 
 	Route::get('/test',function(){
-		return view('Frontend::room-info');
+		return ;
 	});
 
 	Route::get('/',[
@@ -51,8 +51,13 @@
 		'uses' => 'PageController@register'
 	]);
 
-	Route::post('/login',[
+	Route::get('/login.html',[
 		'as' => 'login',
+		'uses' => 'PageController@register'
+	]);
+
+	Route::post('/login',[
+		'as' => 'postLogin',
 		'uses' => 'PageController@postLogin'
 	]);
 
@@ -60,3 +65,17 @@
 		'as' => 'follow',
 		'uses' => 'PageController@alert'
 	]);
+
+	Route::get('/customer',[
+		'as' => 'customer',
+		'uses' => 'CustomerController@index'
+	]);
+
+	Route::get('/logout.html',[
+		'as' => 'logout',
+		'uses' => 'CustomerController@logout'
+	]);
+
+	Route::get('/abc',function(){
+		dd(Auth::user());
+	});

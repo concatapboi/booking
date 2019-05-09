@@ -13,4 +13,9 @@ class Customer extends Model
     'coint',
     'address',
   ];
+
+  public function ofUser(){
+     return $this->belongTo('App\Models\User');
+   }
+
 }
